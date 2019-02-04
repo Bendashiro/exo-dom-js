@@ -1,0 +1,43 @@
+body#picker section h4 {
+  background-color: cyan;
+  border-left: 7px blue solid;
+}
+body#picker section hr.blue {
+  border: solid blue 3px;
+}
+body#picker section div#line1 button.bg-tar {
+  height: 30px !important;
+  width: 30px !important;
+  border-radius: 5px;
+}
+body#picker section div#line1 button#w {
+  background-color: white;
+}
+body#picker section div#line1 button#sol {
+  border-style: solid;
+}
+body#picker section div#line1 button#dot {
+  border-style: dotted;
+}
+body#picker section div#line1 button.bor-style {
+  width: 80px;
+  height: 30px;
+  border: 3px black;
+}
+body#picker section div#line2 {
+  margin-bottom: 8px;
+}
+body#picker section input {
+  width: 60px;
+  height: 30px;
+}
+body#picker section input#color {
+  width: 50px;
+}
+body#picker section div#target {
+  margin-top: 10px;
+  width: 350px;
+  height: 150px;
+}
+
+/*# sourceMappingURL=style.css.map */

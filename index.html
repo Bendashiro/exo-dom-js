@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--<section id="section1">
+        <h1 id="title">Lorem Ipsum</h1>
+        <p>Omaewa mo chindeïru</p>
+        <hr>
+    </section>
+    <button id="btn">Click on me</button>
+    <section id="sec2">
+        <h2 id="subti" class="test">42</h2>
+        <p>est la réponse universelle de l'<span>univers</span>.</p>
+    </section>
+    <section id="exo1">
+            <h1>Exercice 01</h1>
+            <h2 id="titre1">Le Titre : Id</h2>
+            <h2 class="titre2">Le Titre : Class</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi eligendi expedita error nihil qui? <span>Consequatur</span> libero omnis id, harum velit eos cupiditate natus, obcaecati, incidunt minima optio perferendis fugit odit!</p>          
+    </section>
+    <section id="exo2">
+            <h2 id="titre3">Le Titre 3 Exo 02</h2>
+            <h2 id="titre4">Le Titre 4 Exo 02</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi eligendi expedita error nihil qui? <span>Consequatur</span> libero omnis id, harum velit eos cupiditate natus, obcaecati, incidunt minima optio perferendis fugit odit!</p>
+    </section>-->
+    <!--correspond avec main.js-->
+    <div class="container  mt-4">
+        <div class="callout callout-info">
+            <h4>Le DOM - Les écouteurs d'évenements</h4>
+
+        </div>
+        <div class="box box-primary ">
+            <div class="box-header with-border">
+                <h3 class="box-title">Exercice 01 - focus</h3>
+            </div>
+            <div class="box-body">
+                <ul>
+                    <li>Récupérer l'input avec
+                        <b>getElementsByTagName();</b> et le stocker dans une variable</li>
+                    <li>Créer un écouteur d'événement avec comme déclencheur
+                        <b>focus </b>qui au focus de l'input met le fond en bleu</li>
+
+                </ul>
+                <input type="text">
+            </div>
+
+        </div>
+        <div class="box box-primary ">
+            <div class="box-header with-border">
+                <h3 class="box-title">Exercice 02 - "focus" la suite </h3>
+            </div>
+            <div class="box-body">
+                <ul>
+                    <li>Récupérer l'input avec
+                        <b>getElementsByTagName();</b> et le stocker dans une variable</li>
+                    <li>Créer un écouteur d'événement avec comme déclencheur
+                        <b>focus </b>qui au focus de l'input met le fond en bleu.
+                    </li>
+                    <li>
+                        Créer un écouteur d'événement avec comme déclencheur
+                        <b>focusout</b> qui a la sortie du focus le background n'est plus bleu
+                    </li>
+                </ul>
+                <input type="text">
+            </div>
+        </div>
+
+
+        <div class="box box-primary ">
+            <div class="box-header with-border">
+                <h3 class="box-title">Exercice 03 - Le parent</h3>
+            </div>
+            <div class="box-body">
+                <ul>
+                    <li>Récupérer l'élément
+                        <b>li</b> et le stocker dans une variable avec
+                        <b> getElementById();</b>
+                    </li>
+                    <li>
+                        Avec l'aide de la variable contenant l'élément li, afficher le
+                        <b>parent</b> de cet élément dans la console.
+                    </li>
+
+                </ul>
+                <ul>
+                    <li id="liExo03">
+                        L'élément li de l'exercice 3 à récupérer
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="box box-primary ">
+            <div class="box-header with-border">
+                <h3 class="box-title">Exercice 04 - L'enfant</h3>
+            </div>
+            <div class="box-body">
+                <ul>
+                    <li>Récupérer l'élément
+                        <b>ul</b> et le stocker dans une variable avec
+                        <b> getElementById();</b>
+                    </li>
+                    <li>
+                        Avec l'aide de la variable contenant l'élément ul, afficher le premier élément
+                        <b>enfant</b> de cet élément dans la console.
+                    </li>
+
+                </ul>
+                <ul id="ulExo04">
+                    <li>
+                        L'élément li de l'exercice 4
+                    </li>
+                    <li>Elément li supplémentaire a ne pas récupérer mais que j'ai mis juste pour vous embetez</li>
+
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="box box-primary ">
+            <div class="box-header with-border">
+                <h3 class="box-title">Exercice 05 - Les enfants</h3>
+            </div>
+            <div class="box-body">
+                <ul>
+                    <li>Récupérer l'élément
+                        <b>ul</b> et le stocker dans une variable avec
+                        <b> getElementById();</b>
+                    </li>
+                    <li>
+                        Avec l'aide de la variable contenant l'élément ul, afficher chaque
+                        <b>enfants</b> de cet élément dans la console grâce à une boucle.
+                    </li>
+
+                </ul>
+                <ul id="ulExo05">
+                    <li>
+                        01
+                    </li>
+                    <li>
+                        02
+                    </li>
+                    <li>
+                        03
+                    </li>
+                    <li>
+                        04
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+
+
+        <div class="box box-primary ">
+            <div class="box-header with-border">
+                <h3 class="box-title">Exercice 06 - Element précédent</h3>
+            </div>
+            <div class="box-body">
+                <ul>
+                    <li>Récupérer l'élément avec
+                        <b> getElementsByClassName();</b> et le stocker dans une variable</li>
+                    <li>
+                        Afficher dans la console l'élément précédent graçe à la propriété previousElementSibling
+                    </li>
+                </ul>
+                <p>Element précédent</p>
+                <p class="exo06Elem">Element à récupérer</p>
+            </div>
+
+        </div>
+
+
+        <div class="box box-primary ">
+            <div class="box-header with-border">
+                <h3 class="box-title">Exercice 07 - Element suivant</h3>
+            </div>
+            <div class="box-body">
+                <ul>
+                    <li>Récupérer l'élément avec
+                        <b> getElementsByClassName();</b> et le stocker dans une variable</li>
+                    <li>
+                        Afficher dans la console l'élément suivant grâce à la propriété nextElementSibling
+                    </li>
+                </ul>
+                <p>Element précédent</p>
+                <p class="exo07Elem">Element à récupérer</p>
+                <p>Element suivant</p>
+            </div>
+
+        </div>
+
+        <div class="box box-primary ">
+            <div class="box-header with-border">
+                <h3 class="box-title">Exercice 08 - Copier</h3>
+            </div>
+            <div class="box-body">
+                <ul>
+                    <li>Récupérer les trois paragraphe ainsi que le button avec
+                        <b> getElementsByClassName();</b> et les stocker dans des variables</li>
+                    <li>Au clique du button le texte du premier et du dernier paragraphe sont écrasé par le texte du
+                        second paragraphe</li>
+                </ul>
+                <p class="premierParagraphe">A remplacer</p>
+                <p class="secondParagraphe">Voici le paragraphe à
+                    < /> copier</p>
+                <p class="dernierParagraphe">A remplacer</p>
+                <button class="buttonExo btn btn-primary">Click me</button>
+            </div>
+
+        </div>
+
+        <div class="box box-primary ">
+            <div class="box-header with-border">
+                <h3 class="box-title">Exercice 09</h3>
+            </div>
+            <div class="box-body">
+                <ul>
+                    <li>Récupérer les deux paragraphe avec
+                        <b> getElementsByTagName();</b> et les stocker dans des variables</li>
+                    <li>Récupérer le button avec
+                        <b> getElementsByClassName();</b> et le stocker dans une variable</li>
+                    <li>
+                        Créer un swap entre les deux textex au clique du button
+                    </li>
+                </ul>
+                <p>Texte 01</p>
+                <button class="btn btn-primary mb-2">
+                    <i class="fas fa-exchange-alt fa-rotate-90 "></i>
+                </button>
+                <p>Texte 02</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="public/js/exojs.js"></script>
+    <!-- <script src="./public/js/index.js"></script> -->
+    <!-- <script src="./public/js/main.js"></script> -->
+</body>
+
+</html>
