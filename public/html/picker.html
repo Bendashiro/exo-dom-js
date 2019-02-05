@@ -13,17 +13,30 @@
         <h4 class="text-white p-3 pl-4 ">Le DOM - Exo:StyleGenerator</h4>
         <hr class="blue">
         <div id="line1">
-            <button id="w" class="bg-tar">W</button>
-            <button id="bcolor" class="bg-tar">C</button>
-            <button id="sol" class="bor-style">Solid</button>
-            <button id="dot" class="bor-style">Dotted</button>
+            <button id="w" data-style="backgroundColor" class="bg-tar">W</button>
+            <button id="r" data-style="backgroundColor" class="bg-tar">R</button>
+            <button id="g" data-style="backgroundColor" class="bg-tar">G</button>
+            <button id="b" data-style="backgroundColor" class="bg-tar">B</button>
+            <button id="sol" data-style="borderStyle" class="bor-style">Solid</button>
+            <button id="das" data-style="borderStyle" class="bor-style">Dashed</button>
+            <button id="dot" data-style="borderStyle" class="bor-style">Dotted</button>
         </div>
         <hr>
         <div id="line2">
-            <input type="color" name="" id="color">
-            <input type="number" name=""  value="" id="bor-wei"><!--s'utilise avec une valeur définis pour pouvoir visualiser-->
+            <input type="color" data-style="borderColor" name="" id="color">
+            <input type="number" name=""  value="" id="b" data-style="border" class="bor-wei"><!--s'utilise avec une valeur définis pour pouvoir visualiser-->
+            <input type="number" name=""  value="" id="bt" data-style="borderTop" class="bor-wei">
+            <input type="number" name=""  value="" id="bl" data-style="borderLeft" class="bor-wei">
+            <input type="number" name=""  value="" id="bb" data-style="borderBottom" class="bor-wei">
+            <input type="number" name=""  value="" id="br" data-style="borderRight" class="bor-wei">
         </div>
-        <input type="number" name="" value="" id="bor-rad">
+        <div id="line3">
+            <input type="number" name="" value="" id="b-all" data-style="borderRadius" class="bor-rad">
+            <input type="number" name="" value="" id="btl" data-style="borderTopLeftRadius" class="bor-rad">
+            <input type="number" name="" value="" id="btr" data-style="borderTopRightRadius" class="bor-rad">
+            <input type="number" name="" value="" id="bbl" data-style="borderBottomLeftRadius" class="bor-rad">
+            <input type="number" name="" value="" id="bbr" data-style="borderBottomRightRadius" class="bor-rad">
+        </div>
         <div id="target">Play with me</div>
     </section>
         

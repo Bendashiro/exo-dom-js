@@ -13,8 +13,20 @@ body#picker section div#line1 button.bg-tar {
 body#picker section div#line1 button#w {
   background-color: white;
 }
+body#picker section div#line1 button#r {
+  background-color: red;
+}
+body#picker section div#line1 button#g {
+  background-color: green;
+}
+body#picker section div#line1 button#b {
+  background-color: blue;
+}
 body#picker section div#line1 button#sol {
   border-style: solid;
+}
+body#picker section div#line1 button#das {
+  border-style: dashed;
 }
 body#picker section div#line1 button#dot {
   border-style: dotted;
@@ -27,6 +39,45 @@ body#picker section div#line1 button.bor-style {
 body#picker section div#line2 {
   margin-bottom: 8px;
 }
+body#picker section div#line2 input#b {
+  border: 4px solid black;
+}
+body#picker section div#line2 input#bt {
+  border-top: 4px solid black;
+}
+body#picker section div#line2 input#bl {
+  border-left: 4px solid black;
+}
+body#picker section div#line2 input#br {
+  border-right: 4px solid black;
+}
+body#picker section div#line2 input#bb {
+  border-bottom: 4px solid black;
+}
+body#picker section div#line3 input#b-all {
+  border-radius: 15px;
+  border: 2px black solid;
+}
+body#picker section div#line3 input#btl {
+  border-top-left-radius: 15px;
+  border-top: 2px black solid;
+  border-left: 2px black solid;
+}
+body#picker section div#line3 input#btr {
+  border-top-right-radius: 15px;
+  border-top: 2px black solid;
+  border-right: 2px black solid;
+}
+body#picker section div#line3 input#bbl {
+  border-bottom-right-radius: 15px;
+  border-bottom: 2px black solid;
+  border-left: 2px black solid;
+}
+body#picker section div#line3 input#bbr {
+  border-bottom-right-radius: 15px;
+  border-bottom: 2px black solid;
+  border-right: 2px black solid;
+}
 body#picker section input {
   width: 60px;
   height: 30px;
@@ -38,6 +89,7 @@ body#picker section div#target {
   margin-top: 10px;
   width: 350px;
   height: 150px;
+  overflow: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
